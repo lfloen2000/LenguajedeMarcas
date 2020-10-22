@@ -1,5 +1,5 @@
 <!ELEMENT emails (email*)>
-<!ELEMENT email (para*, cc*, cco*, asunto, cuerpo, adjunto*)>
+<!ELEMENT email (para, cc, cco, asunto, cuerpo, adjunto)>
 <!ELEMENT para (#PCDATA)>
 <!ELEMENT cc (#PCDATA)>
 <!ELEMENT cco (#PCDATA)>

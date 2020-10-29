@@ -1,0 +1,2 @@
+<!ELEMENT Personajesdelospowerrangers (Personajes)>
+<!ELEMENT Personajes (#PCDATA)>

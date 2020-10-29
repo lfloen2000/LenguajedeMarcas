@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE emails SYSTEM "03_DatosFactura.dtd">
+<!DOCTYPE factura SYSTEM "03_DatosFactura.dtd">
 
 <factura n_fac="f999"> 
   <datos_empresa> 

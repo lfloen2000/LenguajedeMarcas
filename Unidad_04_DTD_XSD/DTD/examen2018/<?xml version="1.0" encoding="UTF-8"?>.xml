@@ -1,3 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE PersonajesdelospowerrangerS SYSTEM "Personajesdelospowerrangers.dtd">
-<Personajes>ASFDGF</Personajes>
+<!DOCTYPE Personajesdelospowerrangers SYSTEM "Personajesdelospowerrangers.dtd">
+<Personajesdelospowerrangers>
+    <Personajes>
+        <ranger posicion="lider">
+            <nombre>Troy</nombre>
+            <arma nivel="7">Espada Drago</arma>
+            <vehiculo>Zord Dragón</vehiculo>
+            <color>rojo</color>
+            <poder>
+                <heredado>Sellado arcano</heredado>
+            </poder>
+        </ranger>
+        <ranger posicion="miembro">
+            <nombre>Mia</nombre>
+            <arma nivel="4">Garra de Tigre</arma>
+            <vehiculo>Zord Tigre</vehiculo>
+            <color>amarillo</color>
+            <poder>
+                <heredado>Control terrestre</heredado>
+            </poder>
+        </ranger>
+        <ranger posicion="miembro">
+            <nombre>Emili</nombre>
+            <arma nivel="4">Ballesta Fenix</arma>
+            <vehiculo>Zord Fenix</vehiculo>
+            <color>rosa</color>
+            <poder>
+                <heredado>Viento Celeste</heredado>
+            </poder>
+        </ranger>
+        <ranger posicion="miembro">
+            <nombre>Kevin</nombre>
+            <arma nivel="6">Arco Tiburon</arma>
+            <vehiculo>Zord Tiburon</vehiculo>
+            <color>Azul</color>
+            <poder>
+                <heredado>Control Agua Sagrada</heredado>
+            </poder>
+        </ranger>
+        <ranger posicion="miembro">
+            <nombre>Mike</nombre>
+            <arma nivel="6">Lanza Oso</arma>
+            <vehiculo>Zord Oso</vehiculo>
+            <color>verde</color>
+            <poder>
+                <heredado>Energia Vital</heredado>
+            </poder>
+        </ranger>
+        <ranger posicion="miembro">
+            <nombre>Antonio</nombre>
+            <arma nivel="8">Cuchilla de Barracuda</arma>
+            <vehiculo>Octozord</vehiculo>
+            <color>dorado</color>
+            <poder>
+                <legendario>Caja Negra</legendario>
+            </poder>
+        </ranger>
+    </Personajes>
+</Personajesdelospowerrangers>

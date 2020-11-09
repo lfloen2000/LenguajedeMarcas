@@ -1,0 +1,19 @@
+<!ELEMENT Animales (#PCDATA | Carnivoros | Hervivoros | Omnivoros)*>
+<!ENTITY % atributoNombre "puedeser (Adorable | Flafi | PuedeMatartekillo) 'Flafi'">
+<!ELEMENT Carnivoros (nombre, especie, edad, (Alpha | Beta),extinto?)>
+<!ELEMENT Hervivoros (nombre, especie, movimiento)>
+<!ELEMENT Omnivoros (nombre, especie, edad, movimiento, (Alpha | Beta),extinto?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT especie (#PCDATA)>
+<!ELEMENT movimiento EMPTY>
+<!ELEMENT extinto EMPTY>
+<!ATTLIST especie %atributoNombre;>
+<!ELEMENT edad EMPTY>
+<!ATTLIST edad ciclo (cria|joven|adolescente|adulto) #REQUIRED>
+<!ATTLIST movimiento animalde (manada|solitario) #REQUIRED>
+<!ELEMENT Alpha EMPTY>
+<!ELEMENT Beta EMPTY>
+<!ATTLIST Carnivoros nombre ID #REQUIRED 
+                    enemigo IDREF #IMPLIED
+                    relacionCon IDREFS #IMPLIED
+                    rol CDATA #FIXED "rey">

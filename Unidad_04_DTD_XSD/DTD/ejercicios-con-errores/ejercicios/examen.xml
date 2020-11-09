@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Animales SYSTEM "examen.dtd">
+<Animales>Empezamos con los que molan
+    <Carnivoros nombre="ienas">
+        <nombre>ienas</nombre>
+        <especie></especie>
+        <edad ciclo="adolescente" />
+        <Alpha></Alpha>
+    </Carnivoros>
+    <Carnivoros nombre="leonas" relacionCon="leon">
+        <nombre>lenex</nombre>
+        <especie puedeser="Flafi">canis king</especie>
+        <edad ciclo="adulto" />
+        <Beta />
+    </Carnivoros>
+    <Carnivoros nombre="leon" enemigo="ienas" relacionCon="leonas ienas" rol="rey">
+        <nombre>lenex</nombre>
+        <especie>canis king</especie>
+        <edad ciclo="adulto" />
+        <Alpha></Alpha>
+    </Carnivoros>
+    ESTE ES DEMASIADO FLAFI
+    <Carnivoros nombre="perro">
+        <nombre>mastin tibetanio</nombre>
+        <especie puedeser="Flafi">tibet mastin</especie>
+        <edad ciclo="cria" />
+        <Alpha />
+    </Carnivoros>
+    <Hervivoros>
+        <nombre>jirafa</nombre>
+        <especie>cuellolargo</especie>
+        <movimiento animalde="manada" />
+    </Hervivoros>
+    Este es mu bonito pero cuidado que te arranca la cabeza de un bocado
+    <Omnivoros>
+        <nombre>oso grisli</nombre>
+        <especie puedeser="PuedeMatartekillo">osen pardun</especie>
+        <edad ciclo="adolescente" />
+        <movimiento animalde="solitario" />
+        <Alpha />
+    </Omnivoros>
+    <Omnivoros>
+        <nombre>ornitorrinco</nombre>
+        <especie puedeser="Adorable">castor patus</especie>
+        <edad ciclo="adolescente" />
+        <movimiento animalde="solitario" />
+        <Alpha />
+        <extinto />
+    </Omnivoros>
+</Animales>

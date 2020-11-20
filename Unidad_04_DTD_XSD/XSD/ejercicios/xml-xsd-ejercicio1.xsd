@@ -4,20 +4,39 @@
 
     <xs:complexType name="tipoAlumno">
         <xs:sequence>
-            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="nombre" type="minimoUnCaracter"/>
             <xs:element name="direccion" type="tipoDireccion"/>
-            <xs:element name="telefono" type="xs:string"/>
+            <xs:element name="telefono" type="tipotelefono" />
         </xs:sequence>
-        <xs:attribute name="dni" type="xs:string"/>
+        <xs:attribute name="dni" type="tipoDNI"/>
     </xs:complexType>
 
 
     <xs:complexType name="tipoDireccion">
         <xs:sequence>
-            <xs:element name="calle" type="xs:string"/>
+            <xs:element name="calle" type="minimoUnCaracter"/>
             <xs:element name="numero" type="xs:string"/>
-            <xs:element name="ciudad" type="xs:string"/>
-            <xs:element name="provincia" type="xs:string"/>
+            <xs:element name="ciudad" type="minimoUnCaracter"/>
+            <xs:element name="provincia" type="minimoUnCaracter"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:simpleType name="minimoUnCaracter">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"></xs:minLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipotelefono">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{9}"></xs:pattern>
+        <!-- <xs:pattern value="[0-9]{9}"></xs:pattern> este es otro modo de hacerlo-->
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoDNI">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}\w"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

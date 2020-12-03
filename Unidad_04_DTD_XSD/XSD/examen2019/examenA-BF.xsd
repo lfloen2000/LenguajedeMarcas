@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="ofertasBlackFriday">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="articulo" type="tipoArticulo" minOccurs="1"></xs:element>
+        </xs:sequence>
+      
+    </xs:complexType>  
+</xs:element>
+
+<xs:complexType name="tipoArticulo" mixed="true">
+    <xs:sequence>
+        <xs:element name="fabricante" type="tipoFabricante"/>
+        <xs:element name="oferta" type="tipoOferta"/>
+        <xs:element name="valoraciones" type="tipoValoraciones"/>
+        <xs:element name="preguntas"/>
+        <xs:element name="agregadoACestaDeCompra"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="codigo" type="xs:string"/>
+</xs:complexType>
+
+<xs:complexType name="tipoFabricante">
+    <xs:choice>
+        <xs:element name="canon"/>
+        <xs:element name="epson"/>
+        <xs:element name="sansung"/>
+        <xs:element name="apple"/>
+        <xs:element name="philips"/>
+    </xs:choice>
+</xs:complexType>
+
+<xs:complexType name="tipoOferta" mixed="true">
+    <xs:attribute name="precioHabitual" type="xs:integer"/>
+    <xs:attribute name="descuento"/>
+</xs:complexType>
+
+<xs:complexType name="tipoValoraciones">
+    <xs:sequence>
+        <xs:element name="positiva" type="tipomas"/>
+        <xs:element name="negativa" type="tipomenos"/>
+        <xs:element name="masVotada" type="tipoVoto"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipomas">
+    <xs:sequence>
+        <xs:element name="autor"/>
+        <xs:element name="texto"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipomenos">
+    <xs:sequence>
+        <xs:element name="autor"/>
+        <xs:element name="texto"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tipoVoto" mixed="true">
+    <xs:sequence>
+        <xs:element name="autor"/>
+        <xs:element name="texto"/>
+        <xs:element name="fecha"/>
+    </xs:sequence>
+    <xs:attribute name="votosFavorables" type="xs:integer"/>
+    <xs:attribute name="votosDesfavorables" type="xs:integer"/>
+</xs:complexType>
+
+</xs:schema>

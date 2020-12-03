@@ -15,7 +15,7 @@
         <xs:element name="oferta" type="tipoOferta"/>
         <xs:element name="valoraciones" type="tipoValoraciones"/>
         <xs:element name="preguntas"/>
-        <xs:element name="agregadoACestaDeCompra"></xs:element>
+        <xs:element name="agregadoACestaDeCompra"/>
     </xs:sequence>
     <xs:attribute name="codigo" type="xs:string"/>
 </xs:complexType>

@@ -31,9 +31,19 @@
 </xs:complexType>
 
 <xs:complexType name="tipoOferta" mixed="true">
-    <xs:attribute name="precioHabitual" type="xs:integer"/>
-    <xs:attribute name="descuento"/>
+    <xs:simpleContent>
+        <xs:extension base="ofertadecimal">
+            <xs:attribute name="precioHabitual" type="xs:integer"/>
+            <xs:attribute name="descuento"/>
+        </xs:extension>
+    </xs:simpleContent>
 </xs:complexType>
+
+<xs:simpleType name="ofertadecimal">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="\d+[.]\d{2}"/>
+    </xs:restriction>
+</xs:simpleType>
 
 <xs:complexType name="tipoValoraciones">
     <xs:sequence>

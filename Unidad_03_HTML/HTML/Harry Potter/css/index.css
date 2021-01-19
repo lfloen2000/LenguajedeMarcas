@@ -1,0 +1,17 @@
+body{
+    background: blue;
+}
+
+#divprincipal {
+    background: red;
+    color: white;
+    width: 88%;
+    margin: 0 auto;
+}
+
+#divsecundario {
+    background: red;
+    color: white;
+    width: 88%;
+    margin: 0 auto;
+}

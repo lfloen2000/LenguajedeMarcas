@@ -6,12 +6,36 @@ body{
     background: red;
     color: white;
     width: 88%;
-    margin: 0 auto;
+    margin: auto;
 }
 
-#divsecundario {
-    background: red;
-    color: white;
-    width: 88%;
+#imgBanner {
+    display: inline-block;
+    width: 25%;
+}
+
+#textBanner {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.fila{
+    background: tomato;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.tarjeta{
     margin: 0 auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    width: 23%;
+}
+
+.imgtarjeta{
+    width: 70%;
+    margin: auto;
 }

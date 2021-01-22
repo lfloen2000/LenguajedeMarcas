@@ -40,3 +40,26 @@ body{
     height: 200px;
     margin: 0 auto;
 }
+
+#menu{
+    background: black;
+    text-align: center;
+    width: 90%;
+    
+}
+
+#menu li{
+    display: inline-block;
+    color: white;
+    width: 100px;
+
+}
+
+#menu li:hover{
+    background: orangered;
+}
+
+#menu a{
+    color: steelblue;
+    text-decoration: underline;
+}

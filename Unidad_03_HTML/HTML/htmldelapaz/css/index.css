@@ -3,6 +3,7 @@ body{
     background-size: 100%;
     background-repeat: no-repeat;
     margin: 10px;
+    background-attachment: fixed;
 }
 
 .fila{
@@ -21,9 +22,22 @@ body{
     width: 23%;
 }
 
+.tarjeta:hover{
+    background: yellow;
+    color: blueviolet;
+}
+
 table{
     margin: 10px;
     background: turquoise;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+}
+
+
+.imagen{
+    width: 95%;
+    margin: 5 auto;
+    
 }

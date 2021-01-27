@@ -6,11 +6,18 @@ body{
     background-attachment: fixed;
 }
 
+.indice{
+    margin: 5px auto;
+}
+
+#divprincipal{
+    background-color: white;
+    
+    
+}
 .fila{
-    background:white;
     text-align: center;
     margin-top: 3px;
-    
 }
 
 .tarjeta{
@@ -19,7 +26,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
-    width: 23%;
+    width: 32.5%;
 }
 
 .tarjeta:hover{
@@ -32,12 +39,12 @@ table{
     background: turquoise;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 75%;
 }
 
 
 .imagen{
-    width: 95%;
-    margin: 5 auto;
+    width: 90%;
+    margin: 5px;
     
 }

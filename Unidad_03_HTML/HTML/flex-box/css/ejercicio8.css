@@ -6,6 +6,7 @@ body{
 .container {
     display: flex; /* flex es igual a inline-flex. Los elementos dentro de un flex son flex-items */
     flex-wrap: wrap;
+    align-self: start;
     border: 10px solid red;
     height: 100vh; /* Utiliza el 100% del alto del viewport (parte visible de la página) */ 
     box-sizing: border-box; /* Unifica en un único valor de cada div los siguientes: margin, padding y border*/ 
@@ -18,7 +19,8 @@ body{
   text-align: center;
   text-shadow: 4px 4px 0 rgba(0, 0, 0, .1);
   padding: 10px;
-  width: 31.7635%;
+  width: 8.4455%;
+  height: auto;
 }
 
 /* Colores de cada box */

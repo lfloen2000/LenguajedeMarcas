@@ -11,12 +11,12 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
     <a class="navbar-brand" href="#">LMSGI</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
@@ -26,36 +26,88 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Service</a>
-        </li>    
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
-        </li>    
+        </li>
       </ul>
-    </div>  
+    </div>
   </nav>
-  <div class="container-fluid p-5 bg-primary text-white">
+  <div class="container-fluid p-5 bg-primary text-white" style="margin-top:40px">
     <h1>My First Bootstrap Page</h1>
     <p>Esta pagina de Bootstrap es de prueba para trabajarla</p>
   </div>
   <br>
   <div class="container">
-    <div class="col-sm-8">
-      <h1>What we do?</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugiat quibusdam ipsum explicabo temporibus voluptates perspiciatis reiciendis exercitationem totam corrupti vitae cum, provident atque harum autem inventore cumque ab! Voluptate!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum saepe, vitae soluta dolores vero dolore accusantium eos veniam consequuntur assumenda dolorum id? Minus quisquam neque, aliquam praesentium qui quod?</p></div>
-  </div>
-  <div class="container">
-    <div class="col-sm-4">
-      <h1>Datos de Contacto</h1>
-      <h2>LMSGI</h2>
-      <p></p>
-      <p></p>
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>What we do</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugiat quibusdam ipsum explicabo temporibus
+          voluptates perspiciatis reiciendis exercitationem totam corrupti vitae cum, provident atque harum autem
+          inventore cumque ab! Voluptate!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio earum saepe, vitae soluta dolores vero
+          dolore accusantium eos veniam consequuntur assumenda dolorum id? Minus quisquam neque, aliquam praesentium qui
+          quod?</p>
+      </div>
+      <div class="col-sm-4">
+        <h1>Contact Us</h1>
+        <hr>
+        <p>LMSGI<br>
+          3481 Melrose Place<br>
+          Beverly Hills, CA 90210</p>
+        <p>P:(123) 456-7890<br>
+          E:<a href="#">name@example.com</a></p>
+      </div>
+      <div class="col-sm-4"><button type="button" class="btn btn-primary btn-lg">Call to Action>></button></div>
     </div>
-  </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="card-deck">
+        <div class="card col-sm-4" style="width:400px">
+          <img class="card-img-top" src="./images/300x200.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti recusandae ipsum
+              dicta? Ut alias ducimus assumenda aut, minus, nam dolor reiciendis, deserunt sapiente cum mollitia non
+              odit qui aperiam dolore.</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+        </div>
+        <div class="card col-sm-4" style="width:400px">
+          <img class="card-img-top" src="./images/300x200.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti recusandae ipsum
+              dicta? Ut alias ducimus assumenda aut, minus, nam dolor reiciendis, deserunt sapiente cum mollitia non
+              odit qui aperiam dolore.</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+        </div>
+        <div class="card col-sm-4" style="width:400px">
+          <img class="card-img-top" src="./images/300x200.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti recusandae ipsum
+              dicta? Ut alias ducimus assumenda aut, minus, nam dolor reiciendis, deserunt sapiente cum mollitia non
+              odit qui aperiam dolore.</p>
+            <a href="#" class="btn btn-primary stretched-link">See Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-expand-sm bg-dark justify-content-center">
+      <span class="navbar-text">
+       <p class="text-white">Navbar text</p>
+      </span>
+    </nav>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
